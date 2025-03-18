@@ -1,45 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML示例文档</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./111.css">
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的网站</h1>
-        <nav>
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">关于我们</a></li>
-                <li><a href="#">联系我们</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <div class="header">
+            <img src="./img/pic2.png" alt="" class="logo">
+            <h1>任务管理系统</h1>
+        </div>
 
-    <main>
-        <article>
-            <h2>最新文章</h2>
-            <p>这是一个段落文本，用于演示HTML的基本内容展示。</p>
-            <ol>
-                <li>有序列表项1</li>
-                <li>有序列表项2</li>
-                <li>有序列表项3</li>
-            </ol>
-        </article>
+        <div class="input-seciton">
+            <input type="text" id="taskInput" placeholder="请输入新任务.....">
+            <button id="addBtn">添加任务</button>
+        </div>
 
-        <section>
-            <h3>功能特性</h3>
-            <ul>
-                <li>响应式布局</li>
-                <li>语义化标签</li>
-                <li>现代浏览器支持</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 版权所有</p>
-    </footer>
+        <div class="task-controls">
+            <div class="task-filters">
+                <button id="filterAll">全部</button>
+                <button id="filterActive">未完成</button>
+                <button id="filterCompleted">已完成</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app1.js"></script>
 </body>
 </html>
